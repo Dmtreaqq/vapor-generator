@@ -30,12 +30,12 @@ const Contacts = ({posts}) => {
       <Head>
         <title>Posts</title>
       </Head>
-      <Heading text="Post List:" />
+      <Heading style={{color: 'black'}} text="Список парогенераторов:" />
       <ul>
         {posts && posts.map(({ id, title }) => {
           return (
             <li key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
+              <Link href={`/parogeneratory/parogenerator-gsm-143`}>{title}</Link>
             </li>
           )
         })}

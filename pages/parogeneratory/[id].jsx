@@ -1,4 +1,4 @@
-import PostInfo from "../../components/PostInfo";
+import SteamGen from "../../components/SteamGen/SteamGen";
 import Head from 'next/head';
 
 export const getStaticPaths = async () => {
@@ -37,7 +37,7 @@ const Post = ({post}) => {
       <Head>
         <title>Post</title>
       </Head>
-      <PostInfo post={post}/>
+      <SteamGen post={post}/>
     </>
   )
 };

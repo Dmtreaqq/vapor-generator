@@ -2,7 +2,7 @@ import Head from 'next/head';
 import imgBig from '../public/images/nord1.jpg';
 import Image from 'next/image';
 import Heading from '../components/Heading';
-import Socials from '../components/Socials';
+import Socials from '../components/Socials/Socials';
 import styles from '../styles/Home.module.scss';
 
 export const getStaticProps = async () => {
@@ -31,8 +31,7 @@ const Home = ({socials}) => (
     <Head>
       <title>Home</title>
     </Head>
-    <Heading style={{color: 'black'}} text="Steam Generator" /> 
-    <Socials socials={socials} />
+    <Heading style={{color: 'black'}} text="Парогенераторы Nordmann" /> 
     <Image
       src={imgBig}
       width={500}
@@ -40,6 +39,7 @@ const Home = ({socials}) => (
       alt="Big image"
       placeholder="blur"
     />
+    <Socials socials={socials} />
   </div>
 );
 

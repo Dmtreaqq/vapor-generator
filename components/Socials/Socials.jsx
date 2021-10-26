@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from '../styles/Socials.module.scss';
+import styles from './Socials.module.scss';
 
 const Socials = ({socials}) => {
   if(!socials)

@@ -10,6 +10,7 @@ const Socials = ({socials}) => {
       <Head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.css" />
       </Head>
+      <div>test</div>
       <ul className={styles.socials}>
         {socials && socials.map(({id, icon, path}) => {
           return (
